@@ -2,9 +2,16 @@
 host: 'https://github.com'
 {%- endload %}
 
+{% set winrepo_settings = salt['pillar.get'](
+    'winrepo',
+    default=default_settings,
+    merge=True
+  )
+%}
+
 {% set nscp = salt['pillar.get'](
     'nscp:winrepo',
-    default=default_settings,
+    default=winrepo_settings,
     merge=True
   )
 %}
