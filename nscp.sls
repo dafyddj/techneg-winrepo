@@ -17,7 +17,7 @@ host: 'https://github.com'
 %}
 
 nscp:
-{% for version in ['0.4.4.23', '0.4.4.15'] %}
+{% for version in ['0.5.0.62', '0.4.4.23', '0.4.4.15'] %}
   '{{ version }}':
     full_name: NSClient++ (x64)
     installer: {{ nscp.host}}/mickem/nscp/releases/download/{{ version }}/NSCP-{{ version }}-x64.msi
