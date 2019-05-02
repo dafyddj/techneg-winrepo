@@ -6,6 +6,6 @@ dejavu-x3:
     source_hash: 'sha1=c8ec19335635a304fc5ab3d8d76a42bb45e4dd55'
     install_flags: '/S "/v/qn /norestart"'
     msiexec: False
-    uninstaller: '{92DE52A4-384B-4C28-B67C-49F90B05936A}'
-    uninstall_flags: '/qn /norestart'
+    uninstaller: msiexec.exe
+    uninstall_flags: '/x {E350DBC6-7B58-4AFE-AB3E-08A536B8514B} /qn /norestart'
 {% endfor %}
